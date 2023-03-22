@@ -1,0 +1,27 @@
+Create database if not exist books management;
+Use books management;
+Create table student (
+		Reg id int primary key,
+		name char (20),
+		Branch char (50),
+		Course char (20),
+		Mobile int,
+		Email varchar (55)
+
+);
+
+Create table Book (
+		Book id int primary key,
+		Book name char (30),
+ 		Publication char (30),
+		Edition int,
+		Author char (20),
+		Availability status int
+) ;
+
+Create table borrower (
+		Reg id INT PRIMARY KEY,
+		Book id int,
+		Issue date DATE,
+		Return date DATE 
+);
